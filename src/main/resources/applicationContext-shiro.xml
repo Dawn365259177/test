@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!-- <bean id="employeeRealm" class="cn.wolfcode.crm.security.shiro.realm.EmployeeRealm">
+        <property name="employeeService" ref="employeeServiceImpl"/>
+        <property name="roleService" ref="roleServiceImpl"/>
+        <property name="permissionService" ref="permissionServiceImpl"/>
+    </bean>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="employeeRealm"/>
+    </bean>
+
+    <bean id="authc" class="cn.wolfcode.crm.security.shiro.filter.AajxFormAuthenticationFilter"/>
+
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager"/>
+        <property name="loginUrl" value="/login"/>
+       &lt;!&ndash; <property name="filters">
+            <map>
+                <entry key="authc" value-ref="authc"></entry>
+            </map>
+        </property>&ndash;&gt;
+        <property name="filterChainDefinitions">
+            <value>
+                /static/**=anon
+                /error.jsp=anon
+                /logout=logout
+                /**=authc
+            </value>
+        </property>
+    </bean>-->
+</beans>
